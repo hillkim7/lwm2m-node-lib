@@ -3,7 +3,9 @@ var config = {};
 // Configuration of the LWTM2M Server
 //--------------------------------------------------
 config.server = {
-    port: 5684,                         // Port where the server will be listening
+    port: 5683,                         // Port where the server will be listening
+                                        // The default port for a non-secure connection is 5683
+                                        // and the port for a secure connection is 5684.
     lifetimeCheckInterval: 1000,        // Minimum interval between lifetime checks in ms
     udpWindow: 100,
     defaultType: 'Device',
